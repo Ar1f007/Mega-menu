@@ -39,7 +39,6 @@ const MenuItems = ({ items, depthLevel }) => {
             onClick={() => setDropdown((prev) => !prev)}
           >
             {items.title} <span style={{ rotate: '360deg' }}>&raquo;</span>
-            {/*{depthLevel > 0 ? <span style={{ rotate: '360deg' }}>&raquo;</span> : <span className="arrow" />}*/}
           </button>
           <Dropdown submenus={items.submenu} dropdown={dropdown} depthLevel={depthLevel} />
         </>
