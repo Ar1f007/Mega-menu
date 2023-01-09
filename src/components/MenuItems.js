@@ -38,7 +38,8 @@ const MenuItems = ({ items, depthLevel }) => {
             aria-expanded={dropdown ? 'true' : 'false'}
             onClick={() => setDropdown((prev) => !prev)}
           >
-            {items.title} {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
+            {items.title} <span style={{ rotate: '360deg' }}>&raquo;</span>
+            {/*{depthLevel > 0 ? <span style={{ rotate: '360deg' }}>&raquo;</span> : <span className="arrow" />}*/}
           </button>
           <Dropdown submenus={items.submenu} dropdown={dropdown} depthLevel={depthLevel} />
         </>

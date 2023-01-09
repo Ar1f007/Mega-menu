@@ -7,7 +7,7 @@ const Header = () => {
         <a href="/" className="logo">
           Logo
         </a>
-        <Navbar />
+        {/*<Navbar />*/}
       </div>
     </header>
   );
